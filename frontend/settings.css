@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e6f4fe;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.settings-header h1 {
+  font-size: 2rem;
+  color: #111827;
+}
+
+#changePasswordBtn {
+  border: none;
+  background: #4a90e2;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#changePasswordBtn:hover {
+  background: #357abd;
+}
+
+#passwordMessage {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.password-field{
+    position: relative;
+}
+
+.password-field input{
+    width: 100%;
+    padding-right: 55px;
+}
+
+.eye-button{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.eye-icon{
+    width: 18px;
+    height: 18px;
+    opacity: .7;
+}
+
+.back-btn {
+  text-decoration: none;
+  background: #4a90e2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  background: #357abd;
+}
+
+.settings-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.settings-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.setting-item label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.setting-item input {
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+}
+
+.setting-item input:focus {
+  border-color: #4a90e2;
+}
+
+.setting-item input:disabled {
+  background: #f3f4f6;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+#saveRecoveryEmail {
+  border: none;
+  background: #4a90e2;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#saveRecoveryEmail:hover {
+  background: #357abd;
+}
+
+#recoveryMessage {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+#otpSection {
+  margin-top: 18px;
+}
+
+#verifyOTP {
+  border: none;
+  background: #4a90e2;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+#verifyOTP:hover {
+  background: #357abd;
+}
+
+@media (max-width: 768px) {
+  .settings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .settings-header h1 {
+    font-size: 1.7rem;
+  }
+}

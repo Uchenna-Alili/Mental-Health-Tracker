@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood History - Mental Health Tracker</title>
+  <link rel="stylesheet" href="history.css" />
+</head>
+<body>
+  <div class="history-container">
+    <header class="history-header">
+      <h1>Mood History</h1>
+      <a href="dashboard.html" class="back-btn">← Back to Dashboard</a>
+    </header>
+
+    <section class="history-card">
+  <h2>Your Full Mood Log</h2>
+
+  <div class="filter-bar">
+    <label for="monthFilter">Filter by month:</label>
+    <select id="monthFilter">
+      <option value="all">All Months</option>
+    </select>
+  </div>
+
+  <div id="fullHistoryList">
+    <p>Loading mood history...</p>
+  </div>
+</section>
+
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - Mental Health Tracker</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+   <header class="dashboard-header">
+<h1>Mental Health Tracker</h1>
+
+<div class="header-actions">
+<a href="settings.html" class="settings-btn">
+  <img src="assets/icons/settings.svg" class="nav-icon">
+  Settings
+</a>
+<button id="logoutBtn">Logout</button>
+</div>
+
+</header>
+    <section class="welcome-card">
+
+    <div class="welcome-content">
+
+        <div>
+
+            <h2 id="welcomeTitle">Dashboard</h2>
+
+            <p id="welcomeText">
+                Welcome to your mental health dashboard.
+            </p>
+
+            <p id="streakMessage"></p>
+
+            <div class="dashboard-actions">
+
+                <a href="history.html" class="view-history-btn">
+                    View Full Mood History
+                </a>
+
+                <a href="support.html" class="support-btn">
+                    Support
+                </a>
+
+            </div>
+
+        </div>
+
+        <img src="assets/illustrations/undraw_meditation_k4oa.svg" class="welcome-svg">
+
+    </div>
+
+</section>
+
+<div class="stats-grid">
+
+  <div class="stat-card">
+    <h4>Total Entries</h4>
+    <p id="totalEntries">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>Entries This Month</h4>
+    <p id="entriesThisMonth">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>Best Streak</h4>
+    <p id="bestStreak">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>Latest Mood</h4>
+    <p id="latestMood">0</p>
+  </div>
+
+</div>
+
+    <section class="grid-layout">
+      
+
+      <div class="card">
+  <h3 class="section-title">
+  <img src="assets/icons/smile-plus.svg" class="section-icon">
+  Mood Entry
+</h3>
+  <form id="moodForm">
+    <label for="mood">How are you feeling today? (1 - 10)</label>
+    <input type="range" id="mood" min="1" max="10" value="5" />
+    <p>Your mood: <span id="moodValue">5</span></p>
+
+    <label for="note">Optional note</label>
+    <textarea id="note" rows="4" placeholder="Write a short note..."></textarea>
+
+    <button type="submit">Submit Mood</button>
+    <p id="moodMessage"></p>
+  </form>
+</div>
+
+<div class="card insights-card">
+  <h3 class="section-title">
+  <img src="assets/icons/brain.svg" class="section-icon">
+  Insights
+</h3>
+  <div id="insightsContent">
+    <p>Loading insights...</p>
+  </div>
+</div>
+
+    <div class="card history-card">
+  <h3 class="section-title">
+  <img src="assets/icons/history.svg" class="section-icon">
+  Mood History
+</h3>
+  <div id="historyList" class="history-list">
+    <p>Loading mood history...</p>
+  </div>
+</div>
+
+    <div class="card graph-card">
+      <h3 class="section-title">
+  <img src="assets/icons/chart-column.svg" class="section-icon">
+  Mood Graph
+</h3>
+      <canvas id="moodChart"></canvas>
+    </div>
+
+    </section>
+  </div>
+
+  <a href="chat.html" class="chat-widget"><img src="assets/icons/bot.svg" class="chat-icon">
+Mood Assistant</a>
+
+  <script src="chart.js"></script>
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

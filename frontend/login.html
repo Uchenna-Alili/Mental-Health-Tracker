@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mental Health Tracker</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-page">
+
+        <!-- Left Section -->
+
+        <div class="login-info">
+
+            <div class="brand">
+
+                <h1>Mental Health Tracker</h1>
+
+                <p>
+                    Track your wellbeing, understand your emotions,
+                    and gain meaningful insights into your mental health.
+                </p>
+
+            </div>
+
+            <div class="feature-list">
+
+                <div class="feature">
+                    📊 Mood Tracking
+                </div>
+
+                <div class="feature">
+                    🤖 Lumi AI Assistant
+                </div>
+
+                <div class="feature">
+                    📈 Insightful Analytics
+                </div>
+
+                <div class="feature">
+                    🔒 Secure & Private
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Section -->
+
+        <div class="login-panel">
+
+            <div class="form-card">
+
+                <h2>Welcome Back</h2>
+
+                <p class="subtitle">
+                    Login to continue
+                </p>
+
+                <form id="loginForm" autocomplete="off">
+
+                    <div class="input-group">
+
+                        <label for="identifier">
+                            Username or Email
+                        </label>
+
+                        <input
+                            type="text"
+                            id="identifier"
+                            placeholder="Enter your username or email"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="password-field">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                                autocomplete="new-password" required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="eye-button"
+                            >
+                            <img src="./assets/icons/eye-close-svgrepo-com.svg" alt="Toggle Password" id="eyeIcon">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="keepLoggedIn"
+                            >
+
+                            <span>Keep me logged in</span>
+
+                        </label>
+
+                        <a
+                            href="forgot-password.html"
+                            class="forgot-password"
+                        >
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                    >
+                        Login
+                    </button>
+
+                    <p class="signup-link">
+
+                        Don't have an account?
+
+                        <a href="register.html">
+                            Sign Up
+                        </a>
+
+                    </p>
+
+                </form>
+
+                <p id="message"></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+  <script src="auth.js"></script>
+  <script src="login.js"></script>
+
+</body>
+</html>

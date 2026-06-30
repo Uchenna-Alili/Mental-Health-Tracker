@@ -1,0 +1,321 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+
+body{
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(
+    135deg,
+    #eef4ff,
+    #f7faff
+);
+
+padding:10px;
+
+}
+
+.login-page{
+width:1100px;
+max-width:100%;
+
+display:flex;
+
+background:white;
+
+border-radius:24px;
+
+overflow:hidden;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.08);
+
+}
+
+/* LEFT SIDE */
+
+.login-info{
+flex:1;
+
+background:linear-gradient(
+    135deg,
+    #2563eb,
+    #4f8cff
+);
+
+color:white;
+
+padding:60px;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+
+}
+
+.brand h1{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+.brand p{
+line-height:1.8;
+font-size:1.05rem;
+
+opacity:.95;
+
+}
+
+.feature-list{
+margin-top:50px;
+
+display:flex;
+flex-direction:column;
+gap:18px;
+
+}
+
+.feature{
+background:rgba(255,255,255,.12);
+
+padding:16px;
+
+border-radius:12px;
+
+backdrop-filter:blur(10px);
+
+}
+
+/* RIGHT SIDE */
+
+.login-panel{
+flex:1;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:50px;
+
+}
+
+#eyeIcon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.eye-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.form-card{
+width:100%;
+max-width:420px;
+}
+
+.form-card h2{
+font-size:2rem;
+color:#1f2937;
+}
+
+.subtitle{
+color:#6b7280;
+margin-top:8px;
+margin-bottom:30px;
+}
+
+.input-group{
+margin-bottom:20px;
+}
+
+.input-group label{
+display:block;
+margin-bottom:8px;
+
+font-size:.95rem;
+font-weight:600;
+
+color:#374151;
+
+}
+
+.input-group input{
+width:100%;
+
+padding:14px;
+
+border:1px solid #d9e2f0;
+
+border-radius:12px;
+
+font-size:15px;
+
+transition:.3s;
+
+}
+
+.input-group input:focus{
+outline:none;
+
+border-color:#4f8cff;
+
+box-shadow:
+0 0 0 4px rgba(79,140,255,.15);
+
+}
+
+/* PASSWORD */
+
+.password-field{
+position:relative;
+}
+
+.eye-button{
+position:absolute;
+
+top:50%;
+right:12px;
+
+transform:translateY(-50%);
+
+border:none;
+background:none;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+/* OPTIONS */
+
+.form-options{
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+margin-bottom:25px;
+
+gap:15px;
+
+}
+
+.remember-me{
+display:flex;
+align-items:center;
+gap:8px;
+
+font-size:.95rem;
+color:#4b5563;
+
+}
+
+.remember-me input{
+width:auto;
+}
+
+.forgot-password{
+text-decoration:none;
+color:#2563eb;
+font-size:.95rem;
+}
+
+.forgot-password:hover{
+text-decoration:underline;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn{
+width:100%;
+
+border:none;
+
+padding:14px;
+
+border-radius:12px;
+
+color:white;
+
+font-size:1rem;
+font-weight:600;
+
+cursor:pointer;
+
+background:linear-gradient(
+    90deg,
+    #2563eb,
+    #4f8cff
+);
+
+transition:.3s;
+
+}
+
+.login-btn:hover{
+transform:translateY(-2px);
+}
+
+/* LINKS */
+
+.signup-link{
+margin-top:20px;
+
+text-align:center;
+
+color:#6b7280;
+
+}
+
+.signup-link a{
+color:#2563eb;
+text-decoration:none;
+font-weight:600;
+}
+
+.signup-link a:hover{
+text-decoration:underline;
+}
+
+/* MESSAGE */
+
+#message{
+margin-top:15px;
+text-align:center;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.login-page{
+    flex-direction:column;
+}
+
+.login-info{
+    text-align:center;
+    padding:40px;
+}
+
+.login-panel{
+    padding:35px;
+}
+
+}

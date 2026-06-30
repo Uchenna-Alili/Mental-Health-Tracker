@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Settings</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+
+<body>
+  <div class="settings-container">
+
+    <header class="settings-header">
+      <h1>Account Settings</h1>
+      <a href="dashboard.html" class="back-btn">← Back to Dashboard</a>
+    </header>
+
+    <div class="settings-card">
+      <h2>Profile Information</h2>
+
+      <div class="setting-item">
+        <label for="username">Username</label>
+        <input type="text" id="username" disabled />
+      </div>
+
+      <div class="setting-item">
+        <label for="accountEmail">Account Email</label>
+        <input type="email" id="accountEmail" disabled />
+      </div>
+    </div>
+
+    <div class="settings-card">
+  <h2>Change Password</h2>
+
+  <div class="setting-item">
+    <label for="currentPassword">Current Password</label>
+
+    <div class="password-field">
+        <input type="password" id="currentPassword">
+
+        <button
+            type="button"
+            id="toggleCurrentPassword"
+            class="eye-button"
+        >
+            <img
+                id="currentEye"
+                src="./assets/icons/eye-close-svgrepo-com.svg"
+                class="eye-icon"
+                alt=""
+            >
+        </button>
+    </div>
+</div>
+
+<div class="setting-item">
+    <label for="newPassword">New Password</label>
+
+    <div class="password-field">
+        <input type="password" id="newPassword">
+
+        <button
+            type="button"
+            id="toggleNewPassword"
+            class="eye-button"
+        >
+            <img
+                id="newEye"
+                src="./assets/icons/eye-close-svgrepo-com.svg"
+                class="eye-icon"
+                alt=""
+            >
+        </button>
+    </div>
+</div>
+
+<div class="setting-item">
+    <label for="confirmNewPassword">Confirm New Password</label>
+
+    <div class="password-field">
+        <input type="password" id="confirmNewPassword">
+
+        <button
+            type="button"
+            id="toggleConfirmPassword"
+            class="eye-button"
+        >
+            <img
+                id="confirmEye"
+                src="./assets/icons/eye-close-svgrepo-com.svg"
+                class="eye-icon"
+                alt=""
+            >
+        </button>
+    </div>
+</div>
+  <button id="changePasswordBtn">
+    Update Password
+  </button>
+
+  <p id="passwordMessage"></p>
+</div>
+
+
+  </div>
+
+
+
+  <script src="auth.js"></script>
+  <script src="settings.js"></script>
+</body>
+
+</html>

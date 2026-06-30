@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - Mental Health Tracker</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+<div class="register-page">
+
+  <div class="register-panel">
+
+    <div class="register-info">
+
+      <h1>Mental Health Tracker</h1>
+
+      <p>
+        Track your wellbeing, understand your emotions,
+        and gain meaningful insights into your mental health.
+      </p>
+
+      <div class="feature-box">📊 Mood Tracking</div>
+      <div class="feature-box">🤖 AI Mood Assistant</div>
+      <div class="feature-box">📈 Insightful Analytics</div>
+      <div class="feature-box">🔒 Secure & Private</div>
+
+    </div>
+
+    <div class="register-form-card">
+
+      <h2>Create Account</h2>
+
+      <p class="subtitle">
+        Join and begin your mental wellness journey
+      </p>
+
+      <form id="registerForm">
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Full Name"
+          required
+        />
+
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          required
+        />
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          autocomplete="off"
+          required
+        />
+
+        <div class="password-field">
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            autocomplete="new-password"
+            required
+          />
+
+          <button
+            type="button"
+            id="togglePassword"
+            class="eye-button"
+          >
+
+            <img
+              id="passwordEye"
+              src="./assets/icons/eye-close-svgrepo-com.svg"
+              alt=""
+              class="eye-icon"
+            >
+
+          </button>
+
+        </div>
+
+        <div class="password-field">
+
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            autocomplete="new-password"
+            required
+          />
+
+          <button
+            type="button"
+            id="toggleConfirmPassword"
+            class="eye-button"
+          >
+
+            <img
+              id="confirmEye"
+              src="./assets/icons/eye-close-svgrepo-com.svg"
+              alt="eyes closed"
+              class="eye-icon"
+            >
+
+          </button>
+
+        </div>
+
+        <button
+          type="submit"
+          class="register-btn"
+        >
+          Create Account
+        </button>
+
+        <p id="registerMessage"></p>
+
+      </form>
+
+      <p class="login-link">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+  <script src="auth.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
