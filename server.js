@@ -3,7 +3,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const pool = require("./db");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const nodemailer = require("nodemailer");
@@ -72,8 +72,10 @@ function authenticateToken(req, res, next) {
     next();
   });
 }
+app.use(express.static(path.join(__dirname, "frontend")));
+
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
 app.get("/test-db", async (req, res) => {
