@@ -16,8 +16,13 @@ const app = express();
 let userMemory = {};
 const memoryPath = path.join(__dirname, "data", "memory.json");
 
+try{
 if (fs.existsSync(memoryPath)) {
   userMemory = JSON.parse(fs.readFileSync(memoryPath, "utf8"));
+}
+} catch (err) {
+  console.error("Failed to safely load runtime memory.json file:", err)
+  userMemory = {};
 }
 
 function saveMemory(memory) {
